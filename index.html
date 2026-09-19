@@ -1,0 +1,379 @@
+<html lang="ar" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>شرطة ريسبكت ستريت</title>
+
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"></head>
+
+
+
+
+
+<body style="--mouse-x: 99.48717948717949%; --mouse-y: 30.476190476190478%;">
+
+    <!-- الشريط العلوي -->
+    <nav class="top-bar">
+
+        <div class="brand">
+            <div class="brand-icon">🛡️</div>
+
+            <div>
+                <h2>شرطة ريسبكت ستريت</h2>
+                <span>وزارة الداخلية</span>
+            </div>
+        </div>
+
+        <div class="nav-links">
+
+            <button onclick="location.href='index.html'" class="active">
+                الرئيسية
+            </button>
+
+            <button onclick="location.href='personnel.html'">
+                المنتسبين
+            </button>
+
+            <button onclick="location.href='uniforms.html'">
+                الملابس
+            </button>
+
+            <button onclick="location.href='violations.html'">
+                المخالفات
+            </button>
+
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+
+            <div>
+                <strong>SYSTEM ONLINE</strong>
+                <small>النظام يعمل</small>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- الهيدر -->
+    <header>
+
+        <div class="header-line"></div>
+
+        <div class="badge">
+            🛡️
+        </div>
+
+        <h1>وزارة الداخلية</h1>
+
+        <p>شرطة ريسبكت ستريت</p>
+
+        <div class="header-status">
+            <span>SECURE SYSTEM</span>
+            <span>•</span>
+            <span>POLICE DEPARTMENT</span>
+        </div>
+
+    </header>
+
+
+    <!-- المحتوى -->
+    <main class="dashboard">
+
+        <div class="card" style="--card-glow-x: 124.66666666666666%; --card-glow-y: -43.78213507625272%; transform: translateY(0px) scale(1);">
+
+            <div class="card-icon">
+                👤
+            </div>
+
+            <h2>سجل المنتسبين</h2>
+
+            <p>
+                عرض أسماء العساكر والمنتسبين
+                ورتبهم ومعلوماتهم.
+            </p>
+
+            <button onclick="location.href='personnel.html'">
+                الدخول
+                <span>←</span>
+            </button>
+
+        </div>
+
+
+        <div class="card" style="--card-glow-x: 232.13333333333335%; --card-glow-y: -43.78213507625272%; transform: translateY(0px) scale(1);">
+
+            <div class="card-icon">
+                🎖️
+            </div>
+
+            <h2>الملابس العسكرية</h2>
+
+            <p>
+                عرض ملابس جميع الرتب
+                والقطاعات والوحدات.
+            </p>
+
+            <button onclick="location.href='uniforms.html'">
+                الدخول
+                <span>←</span>
+            </button>
+
+        </div>
+
+
+        <div class="card" style="--card-glow-x: 339.59999999999997%; --card-glow-y: -43.78213507625272%; transform: translateY(0px) scale(1);">
+
+            <div class="card-icon">
+                📋
+            </div>
+
+            <h2>المخالفات</h2>
+
+            <p>
+                المخالفات الجنائية والمرورية
+                والعقوبات الخاصة بها.
+            </p>
+
+            <button onclick="location.href='violations.html'">
+                الدخول
+                <span>←</span>
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- معلومات النظام -->
+    <section class="system-panel">
+
+        <div class="system-item">
+            <span>الحالة</span>
+            <strong>متصل</strong>
+        </div>
+
+        <div class="system-item">
+            <span>القسم</span>
+            <strong>Police Department</strong>
+        </div>
+
+        <div class="system-item">
+            <span>الحماية</span>
+            <strong>SECURED</strong>
+        </div>
+
+        <div class="system-item">
+            <span>الوقت</span>
+            <strong id="clock">١١:١٦:١١ م</strong>
+        </div>
+
+    </section>
+
+
+    <!-- الفوتر -->
+    <footer>
+
+        <div class="footer-line"></div>
+
+        <p>
+            Respect Street Police Department
+        </p>
+
+        <small>
+            INTERNAL POLICE SYSTEM
+        </small>
+
+    </footer>
+
+
+    <script>
+
+        function updateClock() {
+
+            const now = new Date();
+
+            const time =
+                now.toLocaleTimeString("ar-IQ", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit"
+                });document.getElementById("clock").textContent = time;
+        }
+
+        updateClock();
+
+        setInterval(updateClock, 1000);
+
+    </script>
+<script>
+
+document.addEventListener("mousemove", function(event) {
+
+    const x =
+        (event.clientX / window.innerWidth) * 100;
+
+    const y =
+        (event.clientY / window.innerHeight) * 100;
+
+    document.body.style.setProperty(
+        "--mouse-x",
+        x + "%"
+    );
+
+    document.body.style.setProperty(
+        "--mouse-y",
+        y + "%"
+    );
+
+
+    const cards =
+        document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+
+        const rect =
+            card.getBoundingClientRect();
+
+        const cardX =
+            ((event.clientX - rect.left) / rect.width) * 100;
+
+        const cardY =
+            ((event.clientY - rect.top) / rect.height) * 100;
+
+        card.style.setProperty(
+            "--card-glow-x",
+            cardX + "%"
+        );
+
+        card.style.setProperty(
+            "--card-glow-y",
+            cardY + "%"
+        );
+
+    });
+
+});
+
+</script>
+<script>
+
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(function(card) {
+
+    card.addEventListener("mousemove", function(event) {
+
+        const rect = card.getBoundingClientRect();
+
+        const x =
+            event.clientX - rect.left;
+
+        const y =
+            event.clientY - rect.top;
+
+        const centerX =
+            rect.width / 2;
+
+        const centerY =
+            rect.height / 2;
+
+        const rotateY =
+            ((x - centerX) / centerX) * 5;
+
+        const rotateX =
+            ((centerY - y) / centerY) * 5;
+
+        card.style.transform =
+            "perspective(1000px) " +
+            "rotateX(" + rotateX + "deg) " +
+            "rotateY(" + rotateY + "deg) " +
+            "translateY(-10px) " +
+            "scale(1.02)";
+
+    });
+
+
+    card.addEventListener("mouseleave", function() {
+
+        card.style.transform =
+            "translateY(0) scale(1)";
+
+    });
+
+});
+
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<div class="page-transition"></div>
+<!-- شريط العمليات -->
+<div class="operation-bar">
+
+    <div class="operation-item">
+        <span class="live-dot"></span>
+        SYSTEM ONLINE
+    </div>
+
+    <div class="operation-divider">|</div>
+
+    <div class="operation-item">
+        RS-PD DATABASE
+    </div>
+
+    <div class="operation-divider">|</div>
+
+    <div class="operation-item">
+        SECURE CONNECTION
+    </div>
+
+    <div class="operation-divider">|</div>
+
+    <div class="operation-item">
+        ACCESS LEVEL:
+        <strong>AUTHORIZED</strong>
+    </div>
+
+    <div class="operation-scan"></div>
+
+</div>
+</body></html>

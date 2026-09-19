@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>الملابس العسكرية</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "tajawal", sans-serif;
+            background: #100d18;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 20px;
+            background: #181323;
+            border-bottom: 2px solid #633f91;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #c5b7d8;
+            font-size: 17px;
+        }
+
+        .ranks {
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .rank-box {
+            margin-bottom: 15px;
+        }
+
+        .rank-box input[type="checkbox"] {
+            display: none;
+        }
+
+        .rank {
+            display: block;
+            width: 100%;
+            padding: 22px;
+            background: #1b1624;
+            border: 1px solid #5b3b7d;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .rank:hover {
+            background: #241b31;
+            border-color: #9a6dcc;
+        }
+
+        .table-box {
+            display: none;
+            margin-top: 10px;
+            padding: 12px;
+            background: #181323;
+            border: 1px solid #5b3b7d;
+            border-radius: 10px;
+        }
+
+        .rank-box input[type="checkbox"]:checked + .rank + .table-box {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #633f91;
+            height: 60px;
+            text-align: center;
+            padding: 0;
+        }
+
+        th {
+            background: #241b31;
+            font-size: 18px;
+        }
+
+        td {
+            background: #1b1624;
+        }
+
+        .table-input {
+            width: 100%;
+            height: 60px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        .table-input:focus {
+            background: #241b31;
+            box-shadow: inset 0 0 0 2px #9a6dcc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background: #15111c;
+            color: #9d91aa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎖️ الملابس العسكرية</h1>
+    <p>اضغط على الرتبة لعرض الملابس الخاصة بها</p>
+</header>
+
+<main class="ranks">
+
+    <!-- فريق أول -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank1">
+        <label class="rank" for="rank1">فريق أول</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr><tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- فريق -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank2">
+        <label class="rank" for="rank2">فريق</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- لواء -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank3">
+        <label class="rank" for="rank3">لواء</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- عميد -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank4">
+        <label class="rank" for="rank4">عميد</label><div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- عقيد -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank5">
+        <label class="rank" for="rank5">عقيد</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- رائد -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank6">
+        <label class="rank" for="rank6">رائد</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr><tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- نقيب -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank7">
+        <label class="rank" for="rank7">نقيب</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- ملازم أول -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank8">
+        <label class="rank" for="rank8">ملازم أول</label>
+
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>اسم اللبس</th>
+                    <th>الرقم</th>
+                    <th>الشكل</th>
+                </tr>
+
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+                <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- ملازم -->
+    <div class="rank-box">
+        <input type="checkbox" id="rank9">
+        <label class="rank" for="rank9">ملازم</label><!-- رئيس رقباء -->
+<div class="rank-box">
+    <input type="checkbox" id="rank10">
+    <label class="rank" for="rank10">رئيس رقباء</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- رقيب أول -->
+<div class="rank-box">
+    <input type="checkbox" id="rank11">
+    <label class="rank" for="rank11">رقيب أول</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- رقيب -->
+<div class="rank-box">
+    <input type="checkbox" id="rank12">
+    <label class="rank" for="rank12">رقيب</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr><tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- وكيل رقيب -->
+<div class="rank-box">
+    <input type="checkbox" id="rank13">
+    <label class="rank" for="rank13">وكيل رقيب</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- عريف -->
+<div class="rank-box">
+    <input type="checkbox" id="rank14">
+    <label class="rank" for="rank14">عريف</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- جندي أول -->
+<div class="rank-box">
+    <input type="checkbox" id="rank15">
+    <label class="rank" for="rank15">جندي أول</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr><tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- جندي -->
+<div class="rank-box">
+    <input type="checkbox" id="rank16">
+    <label class="rank" for="rank16">جندي</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- مستجد -->
+<div class="rank-box">
+    <input type="checkbox" id="rank17">
+    <label class="rank" for="rank17">مستجد</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr><tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- المداهمات -->
+<div class="rank-box">
+    <input type="checkbox" id="rank18">
+    <label class="rank" for="rank18">المداهمات</label>
+
+    <div class="table-box">
+        <table>
+            <tr>
+                <th>اسم اللبس</th>
+                <th>الرقم</th>
+                <th>الشكل</th>
+            </tr>
+
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+            <tr><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td><td><input class="table-input" type="text"></td></tr>
+        </table>
+    </div>
+</div>
