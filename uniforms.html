@@ -70,14 +70,38 @@
             border-color: #9a6dcc;
         }
 
-        .table-box {
-            display: none;
-            margin-top: 10px;
-            padding: 12px;
-            background: #181323;
-            border: 1px solid #5b3b7d;
-            border-radius: 10px;
-        }
+     .table-box {
+    display: grid;
+    grid-template-rows: 0fr;
+    margin-top: 0;
+    padding: 0;
+    background: #181323;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+        grid-template-rows 0.45s ease,
+        opacity 0.35s ease,
+        transform 0.45s ease,
+        margin-top 0.45s ease,
+        padding 0.45s ease,
+        border-color 0.45s ease;
+}
+
+.table-box > table {
+    min-height: 0;
+}
+
+.rank-box input[type="checkbox"]:checked + .rank + .table-box {
+    grid-template-rows: 1fr;
+    margin-top: 10px;
+    padding: 12px;
+    border-color: #5b3b7d;
+    opacity: 1;
+    transform: translateY(0);
+}
 
         .rank-box input[type="checkbox"]:checked + .rank + .table-box {
             display: block;
